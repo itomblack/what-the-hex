@@ -7,7 +7,7 @@ var currentHSL = "";
 var hslH = "360";
 var hslS = "100";
 var hslL = "100";
-var counter1 = 15;
+var counter1 = 30;
 
 var Answers = [];
 var allScores = [];
@@ -50,6 +50,10 @@ var runGame = function() {
             endGame(timer);
         } else {
           $('#timer-1').text(counter1.toString());
+          if ( counter1 < 4 ) {
+            console.log('ending');
+            $('#timer-wrap').addClass('js-warning')
+          }
         }
     }, 1000);
 

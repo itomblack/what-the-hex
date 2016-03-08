@@ -97,6 +97,17 @@ html, body {
   line-height: 36px;
   color: white;
   margin: 0;
+
+  p {
+    margin: 0;
+    display: inline;
+  }
+
+  .small-s {
+    font-size: 16px;
+    line-height: 36px;
+    margin-left: -8px;
+  }
 }
 
 .hex-code {
@@ -114,7 +125,7 @@ html, body {
 .btn-next-hex {
   position: absolute;
   top: calc(50% - 20px);
-  width: 100px;
+  width: 160px;
   outline: none;
   height: 40px;
   color: $purple;
@@ -125,7 +136,7 @@ html, body {
   transition: all 0.5s ease;
 
   &:hover {
-    box-shadow: inset 110px 0 0 $yellow;
+    box-shadow: inset 170px 0 0 $yellow;
   }
 }
 
@@ -176,6 +187,8 @@ html, body {
   position: relative;
   top: 0;
   left: 0;
+  box-shadow: 0 1px 5px black;
+  z-index: 50;
 }
 
 .timer-wrap {
@@ -183,6 +196,7 @@ html, body {
   height: 13%;
   background-color: $ink;
   position: relative;
+  transition: background-color 0.3s ease;
 }
 
 .score-wrap {
@@ -272,7 +286,17 @@ input.ui-slider-input {
   opacity: 0;
 }
 
+.js-warning {
+  animation: warningCols 1s ease alternate infinite;
+}
 
+
+@keyframes warningCols {
+  0% { background-color: $red; }
+  50% { background-color: $ink; }
+  75% { background-color: $yellow; }
+  100% { background-color: $ink; }
+}
 
 
 
