@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>What The Hex</title> <!-- ADD A TITLE! -->
+</head>
+<body>
+  
+  <!-- <div id="q-page" class="q-page">
+    <h1 id="hex-code">Hello World</h1>
+    <h2 id="timer-1"></h2>
+  </div> -->
+
+  <div id="a-page" class="a-page">
+    <div class="slider-wrap slider-hue">
+       <!-- <label for="points">Points:</label> -->
+      <input type="range" name="slider-hue" id="slider-hue" value="180" min="0" max="360">
+    </div>
+    <div class="slider-wrap slider-sat">
+       <!-- <label for="points">Points:</label> -->
+      <input type="range" name="slider-sat" id="slider-sat" value="50" min="0" max="100">
+    </div>
+    <div class="slider-wrap slider-light">
+       <!-- <label for="points">Points:</label> -->
+      <input type="range" name="slider-sat" id="slider-hue" value="50" min="0" max="100">
+    </div>
+    <div class="color-wrap"></div>
+  </div>
+
+
+
+  <script src="js/vendor/jquery-2.1.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
