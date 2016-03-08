@@ -17,19 +17,30 @@
   </div> -->
 
   <div id="a-page" class="a-page">
-    <div class="slider-wrap slider-hue">
-       <!-- <label for="points">Points:</label> -->
-      <input type="range" name="slider-hue" id="slider-hue" value="180" min="0" max="360">
+    <!-- HUE -->
+    <div id="slider-hue-wrap" class="slider-wrap slider-hue">
+      <input type="range" name="slider-hue" id="slider-hue" value="180" min="0" max="360"/>
     </div>
-    <div class="slider-wrap slider-sat">
-       <!-- <label for="points">Points:</label> -->
-      <input type="range" name="slider-sat" id="slider-sat" value="50" min="0" max="100">
+    <!-- SATURATION -->
+    <div id="slider-sat-wrap" class="slider-wrap slider-sat">
+      <input type="range" name="slider-sat" id="slider-sat" value="50" min="0" max="100"/>
     </div>
-    <div class="slider-wrap slider-light">
-       <!-- <label for="points">Points:</label> -->
-      <input type="range" name="slider-sat" id="slider-hue" value="50" min="0" max="100">
+    <!-- LIGHTNESS -->
+    <div id="slider-light-wrap" class="slider-wrap slider-light">
+      <input type="range" name="slider-light" id="slider-light" value="50" min="0" max="100"/>
     </div>
-    <div class="color-wrap"></div>
+    <!-- FINAL COLOUR -->
+    <div id="color-wrap" class="color-wrap">
+      <h2 id="timer-1" class="timer-1"></h2>
+      <h1 id="hex-code" class="hex-code"></h1>
+      <button id="btn-next-hex" class="btn-next-hex">NEXT</button>
+    </div>
+
+
+    <div id="game-over" class="game-over-wrap">
+      <h1>Game Over</h1>
+    </div>
+
   </div>
 
 

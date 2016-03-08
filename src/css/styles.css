@@ -287,62 +287,102 @@ html, body {
   height: 100%;
   overflow: hidden; }
 
-/* line 40, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
-.q-page {
-  background-color: #000030;
-  color: white; }
-
-/* line 45, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
-.a-page {
-  background-color: #F2DB00; }
-
 /* line 49, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+.timer-1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 10%;
+  font-size: 16px; }
+
+/* line 57, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+.hex-code {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 40%;
+  font-size: 32px; }
+
+/* line 65, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+.btn-next-hex {
+  position: absolute;
+  bottom: 10%;
+  width: 50%;
+  margin-left: 25%;
+  outline: none;
+  background-color: white;
+  color: #7700FF;
+  border: none; }
+
+/* line 76, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+.game-over-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  -webkit-transform: translate(0, -150%);
+  -ms-transform: translate(0, -150%);
+  transform: translate(0, -150%);
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s; }
+  /* line 89, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+  .game-over-wrap.now-over {
+    -webkit-transform: translate(0, 0%);
+    -ms-transform: translate(0, 0%);
+    transform: translate(0, 0%); }
+
+/* line 96, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .slider-wrap {
   width: 100%;
-  height: 25%;
+  height: 19%;
   position: relative;
   top: 0;
   left: 0; }
 
-/* line 57, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 104, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .slider-hue {
   background: -webkit-gradient(linear, left top, right top, from(#ef1a1a), color-stop(#ef3e1a), color-stop(#ef611a), color-stop(#ef851a), color-stop(#efa81a), color-stop(#efcc1a), color-stop(#efef1a), color-stop(#ccef1a), color-stop(#a8ef1a), color-stop(#85ef1a), color-stop(#61ef1a), color-stop(#3eef1a), color-stop(#1aef1a), color-stop(#1aef3e), color-stop(#1aef61), color-stop(#1aef85), color-stop(#1aefa8), color-stop(#1aefcc), color-stop(#1aefef), color-stop(#1accef), color-stop(#1aa8ef), color-stop(#1a85ef), color-stop(#1a61ef), color-stop(#1a3eef), color-stop(#1a1aef), color-stop(#3e1aef), color-stop(#611aef), color-stop(#851aef), color-stop(#a81aef), color-stop(#cc1aef), color-stop(#ef1aef), color-stop(#ef1acc), color-stop(#ef1aa8), color-stop(#ef1a85), color-stop(#ef1a61), color-stop(#ef1a3e), to(#ef1a1a));
   background: -webkit-linear-gradient(left, #ef1a1a, #ef3e1a, #ef611a, #ef851a, #efa81a, #efcc1a, #efef1a, #ccef1a, #a8ef1a, #85ef1a, #61ef1a, #3eef1a, #1aef1a, #1aef3e, #1aef61, #1aef85, #1aefa8, #1aefcc, #1aefef, #1accef, #1aa8ef, #1a85ef, #1a61ef, #1a3eef, #1a1aef, #3e1aef, #611aef, #851aef, #a81aef, #cc1aef, #ef1aef, #ef1acc, #ef1aa8, #ef1a85, #ef1a61, #ef1a3e, #ef1a1a);
   background: linear-gradient(to right, #ef1a1a, #ef3e1a, #ef611a, #ef851a, #efa81a, #efcc1a, #efef1a, #ccef1a, #a8ef1a, #85ef1a, #61ef1a, #3eef1a, #1aef1a, #1aef3e, #1aef61, #1aef85, #1aefa8, #1aefcc, #1aefef, #1accef, #1aa8ef, #1a85ef, #1a61ef, #1a3eef, #1a1aef, #3e1aef, #611aef, #851aef, #a81aef, #cc1aef, #ef1aef, #ef1acc, #ef1aa8, #ef1a85, #ef1a61, #ef1a3e, #ef1a1a); }
 
-/* line 61, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 108, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .slider-sat {
-  background: -webkit-gradient(linear, left top, right top, from(#808080), to(#008cff));
-  background: -webkit-linear-gradient(left, #808080, #008cff);
-  background: linear-gradient(to right, #808080, #008cff); }
+  background: -webkit-gradient(linear, left top, right top, from(#808080), to(#00ffff));
+  background: -webkit-linear-gradient(left, #808080, #00ffff);
+  background: linear-gradient(to right, #808080, #00ffff); }
 
-/* line 65, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 112, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .slider-light {
-  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#008cff), to(#ffffff));
-  background: -webkit-linear-gradient(left, #000000, #008cff, #ffffff);
-  background: linear-gradient(to right, #000000, #008cff, #ffffff); }
+  background: -webkit-gradient(linear, left top, right top, from(#000000), color-stop(#00ffff), to(#ffffff));
+  background: -webkit-linear-gradient(left, #000000, #00ffff, #ffffff);
+  background: linear-gradient(to right, #000000, #00ffff, #ffffff); }
 
-/* line 69, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 116, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .color-wrap {
   width: 100%;
-  height: 25%;
+  height: 43%;
   background-color: white;
   position: relative;
   top: 0;
   left: 0; }
 
-/* line 81, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 128, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .ui-page {
   min-height: 100px !important; }
 
-/* line 86, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 133, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .ui-slider {
   position: absolute;
   top: -webkit-calc( 50% - 14px);
   top: calc( 50% - 14px);
   width: 100%; }
 
-/* line 92, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 139, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 input.ui-slider-input {
   display: block;
   opacity: 0;
@@ -350,7 +390,7 @@ input.ui-slider-input {
   top: -9999px;
   left: -9999px; }
 
-/* line 127, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 147, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .ui-slider-track {
   position: relative;
   overflow: visible;
@@ -360,12 +400,12 @@ input.ui-slider-input {
   margin: 0 0;
   top: 6px; }
 
-/* line 137, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 157, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .ui-slider-track .ui-btn.ui-slider-handle {
   font-size: 0.9em;
   line-height: 30px; }
 
-/* line 142, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 162, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .ui-slider-track .ui-btn.ui-slider-handle {
   position: absolute;
   z-index: 1;
@@ -376,9 +416,8 @@ input.ui-slider-input {
   outline: 0;
   padding: 0; }
 
-/* line 153, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
+/* line 173, /Users/itomblack/Repos/what-the-hex/src/sass/_home.scss */
 .ui-page-theme-a .ui-btn {
   background-color: #f6f6f6;
   border-color: #ddd;
-  color: #333;
   text-shadow: 0 1px 0 #f3f3f3; }
