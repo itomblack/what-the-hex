@@ -6,17 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <!-- <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css">
   <title>What The Hex</title> <!-- ADD A TITLE! -->
 </head>
 <body>
   
-  <!-- <div id="q-page" class="q-page">
-    <h1 id="hex-code">Hello World</h1>
-    <h2 id="timer-1"></h2>
-  </div> -->
+  <div id="home-page" class="q-page">
+    <div class="home-rain back-red"></div>
+    <div class="home-rain back-orange"></div>
+    <div class="home-rain back-yellow"></div>
+    <div class="home-rain back-green">
+      <img src="../img/hex-logo.svg" alt="">
+    </div>
+    <div class="home-rain back-blue"></div>
+    <div class="home-rain back-purple">
+      <button id="start-game" class="">START</button>
+    </div>
+    <div class="home-rain back-black"></div>
+  </div>
 
   <div id="a-page" class="a-page">
+    <!-- FINAL COLOUR -->
+    <div id="color-wrap" class="color-wrap">
+      <h1 id="hex-code" class="hex-code"></h1>
+    </div>
     <!-- HUE -->
     <div id="slider-hue-wrap" class="slider-wrap slider-hue">
       <input type="range" name="slider-hue" id="slider-hue" value="180" min="0" max="360"/>
@@ -29,16 +43,33 @@
     <div id="slider-light-wrap" class="slider-wrap slider-light">
       <input type="range" name="slider-light" id="slider-light" value="50" min="0" max="100"/>
     </div>
-    <!-- FINAL COLOUR -->
-    <div id="color-wrap" class="color-wrap">
-      <h2 id="timer-1" class="timer-1"></h2>
-      <h1 id="hex-code" class="hex-code"></h1>
-      <button id="btn-next-hex" class="btn-next-hex">NEXT</button>
+    <!-- TIMER & BUTTONS -->
+    <div id="timer-wrap" class="timer-wrap">
+        <h2 id="timer-1" class="timer-1"></h2>
+
+        <button id="btn-next-hex" class="btn-next-hex">NEXT</button>
     </div>
+    
 
 
     <div id="game-over" class="game-over-wrap">
-      <h1>Game Over</h1>
+      <div class="score-wrap">
+        <h1>Game Over</h1>
+        <h1 id="final-score">0</h1>
+      </div>
+      <div class="home-rain back-red">
+        <p id="final-quote" class="final-quote">Not great to be honest.</p>
+      </div>
+      <div class="home-rain back-orange"></div>
+      <div class="home-rain back-yellow"></div>
+      <div class="home-rain back-green">
+        <button id="restart-game" class="">RESTART</button>
+      </div>
+      <div class="home-rain back-blue"></div>
+      <div class="home-rain back-purple">
+        
+      </div>
+      
     </div>
 
   </div>
